@@ -20,6 +20,7 @@ contract VendingMachineV2 is Initializable {
     require(numSodas != 0, "We are out of soda!");
     numSodas--;
     // challenge: add a mapping to keep track of user soda purchases!
+    
     numPurchased[msg.sender]++;
     emit Purchased(msg.sender, msg.value);
   }

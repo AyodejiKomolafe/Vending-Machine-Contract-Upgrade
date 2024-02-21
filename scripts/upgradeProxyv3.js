@@ -10,6 +10,7 @@ async function main() {
   const implementationAddress = await upgrades.erc1967.getImplementationAddress(
     proxyAddress
   );
+  
 
   console.log("The current contract owner is: " + upgraded.owner());
   console.log("Implementation contract address: " + implementationAddress);
